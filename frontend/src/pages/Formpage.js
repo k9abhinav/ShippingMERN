@@ -72,7 +72,7 @@ const Formpage = () => {
     }
   }
 
-  function calculateCost (){
+  const a = function calculateCost (){
     const totalCost = Weight * Country;
     setCost(totalCost)
   }
@@ -138,7 +138,7 @@ const Formpage = () => {
           <option value="50.09">Australia(50.09 INR)</option>
         </select>
       </div>
-      <button type='submit' className="btn" onClick={calculateCost()}>SUBMIT</button>
+      <button type='submit' className="btn" onSubmit={a}>SUBMIT</button>
     </form>
   </div>
 
