@@ -5,7 +5,8 @@ function Navbar() {
   return (
     <div className='allnav'>
 <nav className='navbar'>
-        <div className='leftnav'><span>SHIPPING BOX</span></div>
+        <div className='leftnav'></div>
+        {/* <Link to={"/"}><span>SHIPPING BOX</span></Link> */}
         <div className='rightnav'>
             <Link to={"/list"}>LIST OF BOXES</Link>
             <Link to={"/form"}>FILL A FORM</Link>

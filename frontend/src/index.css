@@ -4,6 +4,11 @@ body {
   font-family: 'Oxygen', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/stylesheets/website-content-sections.svg');
+  /* background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%); */
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 code {

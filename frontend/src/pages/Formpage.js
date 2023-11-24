@@ -88,7 +88,7 @@ const Formpage = () => {
   }
 
   return (
-    
+    <center>
       <div class="form-container">
     <form onSubmit={handleSubmit}>
       <h1>FILL DETAILS</h1>
@@ -152,6 +152,7 @@ const Formpage = () => {
       <button type='submit' className="btn" onClick={calculateCost}>SUBMIT</button>
     </form>
   </div>
+  </center>
 
   );
 };
