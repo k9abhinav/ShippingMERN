@@ -5,7 +5,7 @@ const userSchema = mongoose.Schema({
     Weight:Number,
     Color:String,
     Country:String,
-    Cost:Number
+    Cost:Number,
 
 }
 ,{timestamps:true})

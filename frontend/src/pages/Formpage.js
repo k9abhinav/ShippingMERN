@@ -51,6 +51,14 @@ const Formpage = () => {
     catch(error){
         alert(error)
     }
+    
+  }
+
+
+  const calculateCost=()=>{
+    let totalCost = Weight*Country;
+    setCost(totalCost)
+
   }
 
 
@@ -65,16 +73,18 @@ const Formpage = () => {
         setColor(userdata.Color)
         setCountry(userdata.Country)
         setWeight(userdata.Weight)
-        setCost(userdata.Cost)
+        setCost(userdata.Weight*userdata.Country.value)
+        // let ourCost = userdata.Weight*userdata.Country
+        // if(userdata.Cost === 0){
+        // setCost(ourCost)
+        // }
+        // else{
+        //   setCost(userdata.Cost)
+        // }
     }
     catch(error){
         alert(error)
     }
-  }
-
-  const a = function calculateCost (){
-    const totalCost = Weight * Country;
-    setCost(totalCost)
   }
 
   return (
@@ -101,7 +111,8 @@ const Formpage = () => {
         <label htmlFor="Weight">Weight</label>
         <input
           type='text'
-          pattern="/^[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)$/"
+          // pattern="/^[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)$/"
+          pattern="\d*\.?\d"
           placeholder="Weight of boxes (in kgs)"
           value={Weight}
           title="Its a number and decimal value is allowed"
@@ -138,7 +149,7 @@ const Formpage = () => {
           <option value="50.09">Australia(50.09 INR)</option>
         </select>
       </div>
-      <button type='submit' className="btn" onSubmit={a}>SUBMIT</button>
+      <button type='submit' className="btn" onClick={calculateCost}>SUBMIT</button>
     </form>
   </div>
 

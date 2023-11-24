@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import './App.css';
+import './stylesheets/styles.css';
 import Homepage from './pages/Homepage';
 import Formpage from './pages/Formpage';
 import Listpage from './pages/Listpage';

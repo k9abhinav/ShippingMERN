@@ -40,7 +40,7 @@ const Listpage = () => {
 
   return (
    
-      <div>
+      <div className="table-container">
         <table>
           <thead>
             <tr>
