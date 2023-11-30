@@ -6,8 +6,7 @@ function Homepage() {
     
     <div className='home'>
         <div className='heading'>
-          <h1>SHIPPING BOX</h1>
-          <h4>Your Trusted Partner in Shipping Solutions</h4>
+          <h1 style={{marginTop:25,marginLeft:50}}>SHIPPING BOX</h1>
         </div>
     </div>
   
