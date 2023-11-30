@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import Formpage from './pages/Formpage';
 import Listpage from './pages/Listpage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/list' element={<Listpage/>}/>
           <Route path="/form/:id" element={<Formpage />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
